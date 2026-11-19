@@ -1,0 +1,718 @@
+{
+"/images/partners/atb.webp": [
+360,
+132
+],
+"/images/partners/epicentr.webp": [
+198,
+43
+],
+"/images/partners/novus.webp": [
+199,
+44
+],
+"/images/partners/okko.webp": [
+200,
+48
+],
+"/images/partners/p6.webp": [
+200,
+23
+],
+"/images/partners/p7.webp": [
+200,
+31
+],
+"/images/partners/p8.webp": [
+97,
+85
+],
+"/images/partners/silpo.webp": [
+200,
+80
+],
+"/images/parts/balast/ballast.webp": [
+374,
+162
+],
+"/images/parts/balast/clamp-end.webp": [
+422,
+416
+],
+"/images/parts/balast/clamp-mid.webp": [
+359,
+365
+],
+"/images/parts/balast/connector.webp": [
+449,
+253
+],
+"/images/parts/balast/mat.webp": [
+497,
+287
+],
+"/images/parts/balast/spoiler.webp": [
+452,
+177
+],
+"/images/parts/balast/triangle.webp": [
+512,
+507
+],
+"/images/parts/baskets/brick.webp": [
+720,
+540
+],
+"/images/parts/baskets/concrete-plus.webp": [
+720,
+403
+],
+"/images/parts/baskets/concrete.webp": [
+720,
+419
+],
+"/images/parts/baskets/drawings.webp": [
+720,
+470
+],
+"/images/parts/baskets/gas.webp": [
+720,
+434
+],
+"/images/parts/baskets/individual.webp": [
+720,
+488
+],
+"/images/parts/baskets/pattern-rect-l.webp": [
+495,
+529
+],
+"/images/parts/baskets/pattern-rect-s.webp": [
+519,
+570
+],
+"/images/parts/baskets/pattern-trap-l.webp": [
+404,
+508
+],
+"/images/parts/baskets/pattern-trap-s.webp": [
+526,
+692
+],
+"/images/parts/block/blocks.webp": [
+507,
+329
+],
+"/images/parts/block/clamp-end.webp": [
+450,
+470
+],
+"/images/parts/block/clamp-mid.webp": [
+430,
+471
+],
+"/images/parts/block/rivet-seal.webp": [
+506,
+437
+],
+"/images/parts/block/rivet.webp": [
+521,
+487
+],
+"/images/parts/block/tape.webp": [
+512,
+470
+],
+"/images/parts/block/triangle.webp": [
+542,
+512
+],
+"/images/parts/landing/brace.webp": [
+586,
+319
+],
+"/images/parts/landing/clamp-end.webp": [
+453,
+411
+],
+"/images/parts/landing/clamp-mid.webp": [
+439,
+400
+],
+"/images/parts/landing/connector.webp": [
+461,
+390
+],
+"/images/parts/landing/embed.webp": [
+270,
+503
+],
+"/images/parts/landing/frame.webp": [
+265,
+512
+],
+"/images/parts/landing/profile.webp": [
+636,
+382
+],
+"/images/parts/profile/al-uno.webp": [
+720,
+473
+],
+"/images/parts/profile/c-110.webp": [
+720,
+697
+],
+"/images/parts/profile/c-140.webp": [
+651,
+720
+],
+"/images/parts/profile/g-41-21.webp": [
+720,
+449
+],
+"/images/parts/profile/g-41-72.webp": [
+720,
+560
+],
+"/images/parts/profile/light-d.webp": [
+720,
+431
+],
+"/images/parts/profile/u-38-38.webp": [
+720,
+495
+],
+"/images/parts/profile/u-41-38.webp": [
+720,
+516
+],
+"/images/parts/profile/u-45-41.webp": [
+720,
+519
+],
+"/images/parts/solarset/brackets.webp": [
+499,
+503
+],
+"/images/parts/solarset/clamp-end.webp": [
+467,
+461
+],
+"/images/parts/solarset/clamp-mid.webp": [
+463,
+465
+],
+"/images/parts/solarset/connector.webp": [
+512,
+442
+],
+"/images/parts/solarset/profile.webp": [
+512,
+407
+],
+"/images/portfolio/01.webp": [
+1080,
+1350
+],
+"/images/portfolio/02.webp": [
+1200,
+1600
+],
+"/images/portfolio/03.webp": [
+1280,
+960
+],
+"/images/portfolio/04.webp": [
+1073,
+1600
+],
+"/images/portfolio/05.webp": [
+1200,
+1600
+],
+"/images/portfolio/06.webp": [
+1600,
+1200
+],
+"/images/portfolio/07.webp": [
+1280,
+960
+],
+"/images/portfolio/08.webp": [
+960,
+1280
+],
+"/images/portfolio/09.webp": [
+1280,
+963
+],
+"/images/portfolio/10.webp": [
+1280,
+963
+],
+"/images/portfolio/11.webp": [
+1280,
+960
+],
+"/images/portfolio/12.webp": [
+960,
+1280
+],
+"/images/portfolio/13.webp": [
+1280,
+960
+],
+"/images/portfolio/14.webp": [
+1587,
+1190
+],
+"/images/portfolio/15.webp": [
+960,
+1280
+],
+"/images/portfolio/16.webp": [
+1600,
+1200
+],
+"/images/portfolio/17.webp": [
+1200,
+800
+],
+"/images/portfolio/18.webp": [
+1280,
+720
+],
+"/images/portfolio/19.webp": [
+1600,
+1199
+],
+"/images/portfolio/20.webp": [
+1600,
+900
+],
+"/images/portfolio/21.webp": [
+1280,
+959
+],
+"/images/portfolio/22.webp": [
+1600,
+1200
+],
+"/images/portfolio/23.webp": [
+1280,
+960
+],
+"/images/portfolio/24.webp": [
+1200,
+1600
+],
+"/images/portfolio/25.webp": [
+1600,
+1200
+],
+"/images/portfolio/26.webp": [
+1600,
+1200
+],
+"/images/portfolio/27.webp": [
+1600,
+1200
+],
+"/images/portfolio/28.webp": [
+1080,
+1350
+],
+"/images/portfolio/29.webp": [
+1600,
+1200
+],
+"/images/portfolio/30.webp": [
+1280,
+960
+],
+"/images/portfolio/31.webp": [
+960,
+1280
+],
+"/images/portfolio/32.webp": [
+1200,
+1600
+],
+"/images/portfolio/33.webp": [
+1200,
+1600
+],
+"/images/portfolio/34.webp": [
+1600,
+1200
+],
+"/images/portfolio/35.webp": [
+1200,
+1600
+],
+"/images/portfolio/36.webp": [
+1600,
+1200
+],
+"/images/portfolio/37.webp": [
+1200,
+1600
+],
+"/images/portfolio/38.webp": [
+1200,
+1600
+],
+"/images/portfolio/39.webp": [
+1600,
+1067
+],
+"/images/portfolio/40.webp": [
+1276,
+956
+],
+"/images/portfolio/41.webp": [
+737,
+1600
+],
+"/images/portfolio/42.webp": [
+1280,
+1600
+],
+"/images/portfolio/43.webp": [
+1080,
+1350
+],
+"/images/portfolio/44.webp": [
+720,
+795
+],
+"/images/portfolio/45.webp": [
+1200,
+1600
+],
+"/images/portfolio/46.webp": [
+1196,
+1179
+],
+"/images/portfolio/47.webp": [
+1031,
+594
+],
+"/images/portfolio/48.webp": [
+1461,
+1044
+],
+"/images/portfolio/49.webp": [
+1200,
+1229
+],
+"/images/portfolio/50.webp": [
+1280,
+960
+],
+"/images/portfolio/51.webp": [
+905,
+1600
+],
+"/images/portfolio/52.webp": [
+1600,
+1200
+],
+"/images/portfolio/53.webp": [
+1280,
+960
+],
+"/images/portfolio/54.webp": [
+1600,
+1200
+],
+"/images/portfolio/55.webp": [
+1200,
+1600
+],
+"/images/portfolio/56.webp": [
+1600,
+1200
+],
+"/images/portfolio/57.webp": [
+1600,
+1200
+],
+"/images/portfolio/58.webp": [
+1600,
+900
+],
+"/images/portfolio/59.webp": [
+960,
+1280
+],
+"/images/portfolio/60.webp": [
+960,
+1280
+],
+"/images/portfolio/61.webp": [
+720,
+1280
+],
+"/images/portfolio/62.webp": [
+1024,
+1280
+],
+"/images/portfolio/63.webp": [
+960,
+1280
+],
+"/images/portfolio/64.webp": [
+960,
+1280
+],
+"/images/portfolio/65.webp": [
+960,
+1280
+],
+"/images/portfolio/66.webp": [
+960,
+1280
+],
+"/images/portfolio/67.webp": [
+1280,
+960
+],
+"/images/portfolio/68.webp": [
+1280,
+853
+],
+"/images/portfolio/69.webp": [
+1280,
+720
+],
+"/images/portfolio/70.webp": [
+1600,
+1200
+],
+"/images/portfolio/71.webp": [
+1200,
+1600
+],
+"/images/portfolio/72.webp": [
+1600,
+900
+],
+"/images/portfolio/73.webp": [
+1600,
+1067
+],
+"/images/portfolio/74.webp": [
+1600,
+1200
+],
+"/images/portfolio/75.webp": [
+1600,
+1200
+],
+"/images/portfolio/76.webp": [
+1600,
+1067
+],
+"/images/portfolio/77.webp": [
+1600,
+1067
+],
+"/images/portfolio/78.webp": [
+1600,
+1067
+],
+"/images/portfolio/79.webp": [
+1600,
+1067
+],
+"/images/portfolio/80.webp": [
+1600,
+1067
+],
+"/images/portfolio/81.webp": [
+1200,
+1600
+],
+"/images/portfolio/82.webp": [
+1600,
+1199
+],
+"/images/portfolio/83.webp": [
+1280,
+720
+],
+"/images/render/balast-alu.webp": [
+624,
+379
+],
+"/images/render/balast-ew.webp": [
+624,
+364
+],
+"/images/render/balast-south.webp": [
+1400,
+783
+],
+"/images/render/baskets.webp": [
+649,
+1400
+],
+"/images/render/block-angle.webp": [
+1363,
+1400
+],
+"/images/render/block-card.webp": [
+463,
+372
+],
+"/images/render/block-std.webp": [
+531,
+512
+],
+"/images/render/facade-1.webp": [
+479,
+1400
+],
+"/images/render/facade-2.webp": [
+680,
+1396
+],
+"/images/render/landing-balast.webp": [
+1400,
+1071
+],
+"/images/render/landing-card.webp": [
+551,
+450
+],
+"/images/render/landing-concrete.webp": [
+1400,
+1090
+],
+"/images/render/landing-geo.webp": [
+1400,
+1143
+],
+"/images/render/landing-piles.webp": [
+1400,
+1102
+],
+"/images/render/parking-1.webp": [
+1400,
+1178
+],
+"/images/render/parking-2.webp": [
+1220,
+811
+],
+"/images/render/parking-hero.webp": [
+1400,
+828
+],
+"/images/render/parking-photo.webp": [
+768,
+768
+],
+"/images/render/piles.webp": [
+768,
+768
+],
+"/images/render/profile-card.webp": [
+467,
+331
+],
+"/images/render/solarset-bitum.webp": [
+1400,
+1126
+],
+"/images/render/solarset-ceramic.webp": [
+1400,
+1160
+],
+"/images/render/solarset-falc.webp": [
+1400,
+1135
+],
+"/images/render/solarset-metal.webp": [
+1371,
+1400
+],
+"/images/render/solarset-universal.webp": [
+1400,
+1100
+],
+"/images/site/about-a.webp": [
+1024,
+1024
+],
+"/images/site/about-b.webp": [
+1150,
+1600
+],
+"/images/site/home-b.webp": [
+768,
+768
+],
+"/images/site/home-c.webp": [
+800,
+1050
+],
+"/images/site/home-d.webp": [
+1200,
+1600
+],
+"/images/site/lstk-a.webp": [
+1024,
+1024
+],
+"/images/site/lstk-b.webp": [
+750,
+1100
+],
+"/images/site/other-solutions.webp": [
+1200,
+1600
+],
+"/images/site/piles-a.webp": [
+750,
+1100
+],
+"/images/site/prod-1.webp": [
+1600,
+1280
+],
+"/images/site/prod-2.webp": [
+1200,
+1600
+],
+"/images/site/prod-3.webp": [
+1200,
+1600
+],
+"/images/site/prod-4.webp": [
+1600,
+1280
+],
+"/images/site/prod-5.webp": [
+1600,
+1280
+],
+"/images/site/prod-6.webp": [
+1600,
+1280
+],
+"/images/site/profile-a.webp": [
+768,
+768
+],
+"/images/site/scheme.webp": [
+800,
+1600
+],
+"/images/site/video-poster.webp": [
+720,
+1280
+]
+}
