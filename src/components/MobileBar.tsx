@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { site } from "@/lib/site";
 import { Icon } from "./Icons";
-import { LeadButton } from "./LeadModal";
+import Link from "next/link";
 
 /** Phone-only action bar: call or request is one tap away, except where a form is already on screen. */
 export function MobileBar() {
@@ -22,7 +22,7 @@ export function MobileBar() {
       }
       setFormVisible(seen.size > 0);
     });
-    const watch = () => document.querySelectorAll(".contact-band, .contacts-form, .footer").forEach((el) => io.observe(el));
+    const watch = () => document.querySelectorAll(".contact-band, .contacts-form, .footer, .quiz").forEach((el) => io.observe(el));
     watch();
     const mo = new MutationObserver(watch);
     mo.observe(document.body, { childList: true, subtree: true });
@@ -38,9 +38,9 @@ export function MobileBar() {
       <a href={site.phoneHref} className="btn btn-outline">
         <Icon name="phone" size={18} /> Дзвінок
       </a>
-      <LeadButton className="btn btn-red">
-        Прорахунок <Icon name="arrow" size={18} />
-      </LeadButton>
+      <Link href="/rozrakhunok" className="btn btn-red">
+        Розрахувати <Icon name="arrow" size={18} />
+      </Link>
     </div>
   );
 }

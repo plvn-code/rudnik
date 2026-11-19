@@ -2,13 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useCallback, useEffect, useRef, useState } from "react";
-import { LeadButton } from "@/components/LeadModal";
+import { useRef } from "react";
+import { BgVideo } from "@/components/BgVideo";
 import { Icon } from "@/components/Icons";
-import { reducedMotion, useScrollProgress } from "@/lib/motion";
-import { heroShots } from "@/lib/portfolio";
-
-const DUR = 6000;
+import { useScrollProgress } from "@/lib/motion";
+import { shots } from "@/lib/portfolio";
 
 const words = (text: string, start: number, cls?: string) =>
   text.split(" ").map((w, i) => (
@@ -18,45 +16,19 @@ const words = (text: string, start: number, cls?: string) =>
   ));
 
 /**
- * Full-bleed slideshow of the client's own drone shots. While the page scrolls through the first
+ * Full-bleed background video (aerial solar plants). While the page scrolls through the first
  * 70svh the frame pulls in to a rounded card (clip-path driven by --p) and the copy lifts away.
+ * The card bottom-right leads to the client's own objects, so the stock footage never poses as theirs.
  */
 export function Hero() {
   const ref = useRef<HTMLElement>(null);
-  const [i, setI] = useState(0);
-  const [paused, setPaused] = useState(false);
-  const timer = useRef<number>(0);
-
   useScrollProgress(ref, (p) => ref.current?.style.setProperty("--p", p.toFixed(4)));
-
-  const go = useCallback((n: number) => setI((n + heroShots.length) % heroShots.length), []);
-
-  useEffect(() => {
-    if (paused || reducedMotion()) return;
-    timer.current = window.setTimeout(() => go(i + 1), DUR);
-    return () => window.clearTimeout(timer.current);
-  }, [i, paused, go]);
-
-  // Stop cycling when the hero is off screen (saves decoding work further down the page).
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const io = new IntersectionObserver(([e]) => setPaused(!e.isIntersecting));
-    io.observe(el);
-    return () => io.disconnect();
-  }, []);
-
-  const cur = heroShots[i];
 
   return (
     <section ref={ref} className="hero" aria-label="RUDNIK — завод систем кріплення для СЕС">
       <div className="hero-sticky">
         <div className="hero-media">
-          {heroShots.map((s, k) => (
-            <div key={s.id} className={`hero-slide${k === i ? " is-on" : ""}`} aria-hidden={k !== i}>
-              <Image src={`/images/portfolio/${s.id}.webp`} alt={s.caption} fill priority={k === 0} sizes="100vw" />
-            </div>
-          ))}
+          <BgVideo className="hero-video" />
           <div className="hero-shade" />
         </div>
 
@@ -79,37 +51,25 @@ export function Hero() {
                 виробництва та інженерний супровід — від прорахунку до відвантаження.
               </p>
               <div className="hero-actions">
-                <LeadButton className="btn btn-red btn-lg" topic="Прорахунок">
-                  Отримати прорахунок <Icon name="arrow" size={18} />
-                </LeadButton>
+                <Link href="/rozrakhunok" className="btn btn-red btn-lg">
+                  Розрахувати вартість <Icon name="arrow" size={18} />
+                </Link>
                 <Link href="/systemy" className="btn btn-glass btn-lg">
                   Каталог систем
                 </Link>
               </div>
             </div>
-            <div className="hero-nav fade-up" style={{ animationDelay: "2.9s" }}>
-              <div className="hero-caption">
-                <span>
-                  {String(i + 1).padStart(2, "0")} / {String(heroShots.length).padStart(2, "0")}
-                </span>
-                <Link href={cur.href}>
-                  {cur.caption} <Icon name="arrowUpRight" size={14} />
-                </Link>
-              </div>
-              <div className="hero-dots" style={{ ["--dur" as string]: `${DUR}ms` }}>
-                {heroShots.map((s, k) => (
-                  <button
-                    key={s.id + (k === i ? `-${i}` : "")}
-                    type="button"
-                    aria-label={`Кадр ${k + 1}: ${s.caption}`}
-                    className={k === i ? (paused ? "is-done" : "is-on") : k < i ? "is-done" : undefined}
-                    onClick={() => go(k)}
-                  >
-                    <i />
-                  </button>
-                ))}
-              </div>
-            </div>
+            <Link href="/portfolio" className="hero-objects fade-up" style={{ animationDelay: "2.9s" }}>
+              <span className="hero-objects-img">
+                <Image src="/images/portfolio/79.webp" alt="" fill sizes="96px" priority />
+              </span>
+              <span className="hero-objects-text">
+                <span className="mono">Портфоліо</span>
+                <strong>{shots.length} фото об’єктів на системах RUDNIK</strong>
+                <span>Наземні станції, дахи, паркінги, фасади</span>
+              </span>
+              <Icon name="arrowUpRight" size={20} />
+            </Link>
           </div>
         </div>
         <span className="hero-scroll" aria-hidden="true">

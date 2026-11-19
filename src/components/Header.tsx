@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { nav, site } from "@/lib/site";
 import { Icon } from "./Icons";
-import { LeadButton } from "./LeadModal";
 import { Logo } from "./Logo";
 
 export function Header() {
@@ -13,7 +12,7 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [hidden, setHidden] = useState(false);
   const [open, setOpen] = useState(false);
-  const dark = pathname === "/";
+  const dark = pathname === "/" || pathname === "/rozrakhunok";
 
   useEffect(() => {
     let last = window.scrollY;
@@ -58,9 +57,9 @@ export function Header() {
               <span>Комерційний відділ</span>
               {site.phone}
             </a>
-            <LeadButton className="btn btn-red btn-sm header-cta">
-              Прорахунок <Icon name="arrow" size={16} />
-            </LeadButton>
+            <Link href="/rozrakhunok" className="btn btn-red btn-sm header-cta">
+              Розрахувати вартість <Icon name="arrow" size={16} />
+            </Link>
             <button
               type="button"
               className="header-burger"
@@ -84,11 +83,9 @@ export function Header() {
           ))}
         </nav>
         <div className="mobile-menu-foot">
-          <div onClick={() => setOpen(false)}>
-            <LeadButton className="btn btn-red btn-lg btn-wide">
-              Отримати прорахунок <Icon name="arrow" size={18} />
-            </LeadButton>
-          </div>
+          <Link href="/rozrakhunok" className="btn btn-red btn-lg btn-wide" tabIndex={open ? 0 : -1}>
+            Розрахувати вартість <Icon name="arrow" size={18} />
+          </Link>
           {site.phones.map((p) => (
             <a key={p.href} href={p.href} tabIndex={open ? 0 : -1}>
               {p.phone}

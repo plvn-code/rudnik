@@ -36,6 +36,7 @@ export function Footer() {
                 {s.name}
               </Link>
             ))}
+            <Link href="/rozrakhunok">Калькулятор вартості</Link>
             {nav.slice(2).map((l) => (
               <Link key={l.href} href={l.href}>
                 {l.label}

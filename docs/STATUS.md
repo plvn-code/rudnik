@@ -9,6 +9,10 @@ Full redesign in Ukrainian, white + RUDNIK red:
 - Catalogue pages, Виробництво (counters, film, pinned stages, equipment cards), Портфоліо (83 photos, 8 category filters, lightbox, ?cat= deep links), Про компанію, Контакти (form with their 6 topics), 404, sitemap, robots, Organization schema.
 - Checked at 1440 and 390 px; no horizontal scroll; lint + tsc + production build clean.
 
+## Added 2026-11-19 (second request)
+- `/rozrakhunok` — quiz landing: video background, 6-step cost quiz in the first screen (surface → variant → modules/kW → material → who → timing → result with recommended system, power, indicative range and request form), how it works, surface cards that open the quiz pre-filled, why factory price, photos, partner logos, FAQ. Header / mobile bar / home CTAs lead here.
+- Home hero: background video (Pexels montage) instead of the photo slideshow.
+
 ## Sources used
 - rudnik.ua (UA, 2026-11-19): home, про компанію, systems, every system page incl. FAQ answers, інші рішення, ЛСТК (production capacities), забивання паль, проєктування, портфоліо (83 items with types), контакти, blog (4 posts).
 - Instagram @rudnik.ua (175 posts): positioning lines, panels / KBE cable / EPDM in stock, CarPort.
@@ -25,6 +29,9 @@ Full redesign in Ukrainian, white + RUDNIK red:
 9. **Social links:** footer of rudnik.ua shows Facebook, Telegram, TikTok but the links weren't found — send real URLs.
 10. **Facade layout names:** the two facade renders are labeled «Схема розкладки 01 / 02» — give real names if they have them.
 11. **Video:** the production film is vertical (9:16). A horizontal drone/factory film would allow a video hero.
+
+12. **Quiz prices — most important.** RUDNIK publishes no prices, so the quiz shows the Ukrainian retail market range for similar kits (per module: ground 1 850–3 900 грн, ballast 950–1 900, pitched roof 800–1 350, BLOCK 600–1 100; Solar Parking and facade «за проєктом»), clearly labelled as market prices. Ask for their price per module / per kit (steel vs aluminium, partner vs retail) and replace `perPanel` in `src/lib/quiz.ts`.
+13. **Hero video** is stock (Pexels). If they have their own drone footage of RUDNIK objects, it would be better than stock.
 
 ## Launch checklist
 - GitHub repo, Vercel project (ask the user first).

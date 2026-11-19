@@ -14,12 +14,14 @@ export function LeadForm({
   topic = "Прорахунок",
   button = "Надіслати запит",
   comment = false,
+  topics: showTopics = true,
 }: {
   details?: string;
   source: string;
   topic?: string;
   button?: string;
   comment?: boolean;
+  topics?: boolean;
 }) {
   const pathname = usePathname();
   const [state, setState] = useState<State>("idle");
@@ -62,14 +64,18 @@ export function LeadForm({
 
   return (
     <form className="lead-form" onSubmit={onSubmit}>
-      <span className="mono">Тема звернення</span>
-      <div className="topic-row" role="radiogroup" aria-label="Тема звернення">
-        {topics.map((t) => (
-          <button key={t} type="button" role="radio" aria-checked={current === t} className={current === t ? "is-on" : undefined} onClick={() => setCurrent(t)}>
-            {t}
-          </button>
-        ))}
-      </div>
+      {showTopics && (
+        <>
+          <span className="mono">Тема звернення</span>
+          <div className="topic-row" role="radiogroup" aria-label="Тема звернення">
+            {topics.map((t) => (
+              <button key={t} type="button" role="radio" aria-checked={current === t} className={current === t ? "is-on" : undefined} onClick={() => setCurrent(t)}>
+                {t}
+              </button>
+            ))}
+          </div>
+        </>
+      )}
       <label className="field">
         <input name="name" maxLength={80} placeholder=" " autoComplete="name" />
         <span>Ім’я та компанія</span>
