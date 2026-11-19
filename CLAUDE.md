@@ -5,7 +5,7 @@ Client site for **RUDNIK** — Ukrainian factory of mounting systems for solar p
 **Talk to the user in Russian.** Site copy is **Ukrainian only** (`lang="uk"`, ’ apostrophes, «» quotes). Read `docs/STATUS.md` first (open client questions, launch checklist).
 
 ## Repo
-Local git only (branch `main`). No GitHub repo and no Vercel yet — ask before creating either.
+GitHub `plvn-code/rudnik`, branch `main` (pushed 2026-11-19). No Vercel yet — ask before creating it.
 
 ## Commands
 ```bash

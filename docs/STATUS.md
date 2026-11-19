@@ -1,6 +1,6 @@
 # Status — started 2026-11-19
 
-Local preview: http://localhost:3024. Local git only — no GitHub / Vercel yet.
+Local preview: http://localhost:3024. GitHub: github.com/plvn-code/rudnik (main). No Vercel yet.
 
 ## Done
 Full redesign in Ukrainian, white + RUDNIK red:
@@ -34,6 +34,6 @@ Full redesign in Ukrainian, white + RUDNIK red:
 13. **Hero video** is stock (Pexels). If they have their own drone footage of RUDNIK objects, it would be better than stock.
 
 ## Launch checklist
-- GitHub repo, Vercel project (ask the user first).
+- Vercel project (ask the user first).
 - Env: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `NEXT_PUBLIC_SITE_URL`, then `NEXT_PUBLIC_SITE_LIVE=1`.
 - Send one test request from production.
